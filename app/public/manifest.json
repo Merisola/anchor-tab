@@ -1,0 +1,40 @@
+{
+    "manifest_version":  3,
+    "name":  "The Anchor Tab",
+    "version":  "2.0.0",
+    "description":  "A calm, personal new tab that keeps you on your top priorities: focus timer, 3 moves, backlog and Ethiopian date.",
+    "chrome_url_overrides":  {
+                                 "newtab":  "newtab.html"
+                             },
+    "background":  {
+                       "service_worker":  "background.js",
+                       "type":  "module"
+                   },
+    "permissions":  [
+                        "storage",
+                        "unlimitedStorage",
+                        "notifications",
+                        "alarms",
+                        "identity",
+                        "bookmarks",
+                        "favicon",
+                        "contextMenus",
+                        "activeTab"
+                    ],
+    "host_permissions":  [
+                             "http://127.0.0.1/*",
+                             "http://localhost/*",
+                             "https://www.googleapis.com/*",
+                             "https://oauth2.googleapis.com/*"
+                         ],
+    "action":  {
+                   "default_title":  "Open The Anchor Tab"
+               },
+    "icons":  {
+                  "16":  "icons/icon16.png",
+                  "32":  "icons/icon32.png",
+                  "48":  "icons/icon48.png",
+                  "128":  "icons/icon128.png"
+              },
+    "key":  "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAxJUrY2dprh3yELE4MNFA+GQEqDU8cR7G/wrQlh1mrM4lEp1PcLX6BeJG9TzsTvUDPv8G1NVdLl0WEMqZLZBOes45k8ZwR/VBnvYl8UqIJuV1wIGVjUZOc7FhaF0V0Qno76Q0aTkfmmM7IclGcWI1lwEg2BQbGcT1wkEv7WFglz4sNBG5QKL0d+syc7LH7ISdVBtswy7D7a+CQ14zUzucJ0iXnq4sSCDRZ3Vf7aF7Kp3G2Xgqg8Ym5RXrg4uO/nZWg4lqJ6zRu2NTgpkdcrqeJxR7XCVSmNEdxCzwOda5UNqw8ZCOd798epifOMr1z2UVxQmhj2sWxmol3c/gNBxk+wIDAQAB"
+}

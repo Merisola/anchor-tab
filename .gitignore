@@ -1,0 +1,62 @@
+# Dependencies
+node_modules/
+app/node_modules/
+
+# Build output (load app/dist unpacked in the browser, but never commit it)
+dist/
+app/dist/
+
+# Environment files and secrets
+.env
+.env.*
+!.env.example
+*.secret
+*.token
+secrets/
+anchor-token*
+
+# MCP helper runtime configuration (tokens belong in the environment)
+.anchor/
+anchor-mcp.config.*
+claude_desktop_config.json
+.claude/
+
+# Certificates and private keys
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Tunnel and packaging artifacts
+.cloudflared/
+*.zip
+*.crx
+
+# Logs and crash reports
+*.log
+logs/
+npm-debug.log*
+crashpad/
+
+# Editors and OS files
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Legacy v1 build kept locally; app/ is the v2 source of truth
+/anchor-extension/
+/anchor-mcp-server.mjs
+/background.js
+/field-kit.js
+/field-manager.html
+/manifest.json
+/newtab.html
+/newtab.js
+/README.txt
+/icon16.png
+/icon32.png
+/icon48.png
+/icon128.png
